@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pasteles</title>
+    <link type="text/css" rel="stylesheet" href="css/hoja-estilo.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Pacifico');
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li class="seleccionado">Pasteles</li>
+            <li><a href="no-pasteles.html">No pasteles</a></li>
+            <li><a href="quienes-somos.html">Quiénes somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <h1>Pasteles</h1>
+    <div class=centradocursiva>
+        <p>
+            <m>(¡Clica para cambiar la imagen!)</m>
+        </p>
+    </div>
+    <ul>
+        <li>Tarta de limón</li>
+        <p>
+            <img id="mostrar-imagen" onclick="cambiarImagen()" src="imagenes/tarta-de-limon.jpg" alt="Tarta de limón"
+                width="280" height="360" />
+        </p>
+        <script>
+            function cambiarImagen() {
+                var imagenMostrada = document.getElementById('mostrar-imagen');
+                if (imagenMostrada.src.match("imagenes/tarta-de-limon.jpg")) {
+                    imagenMostrada.src = "imagenes/lime.jpg";
+                }
+                else {
+                    imagenMostrada.src = "imagenes/tarta-de-limon.jpg";
+                }
+            }
+        </script>
+
+        <li>Bizcocho de naranja</li>
+        <p>
+            <img id="mostrar-imagen2" onclick="cambiarImagen2()" src="imagenes/bizcocho-naranja.jpg" alt="Bizcocho de naranja"
+                width="280" height="360" />
+        </p>
+        <script>
+            function cambiarImagen2() {
+                var imagenMostrada = document.getElementById('mostrar-imagen2');
+                if (imagenMostrada.src.match("imagenes/bizcocho-naranja.jpg")) {
+                    imagenMostrada.src = "imagenes/naranja.jpg";
+                }
+                else {
+                    imagenMostrada.src = "imagenes/bizcocho-naranja.jpg";
+                }
+            }
+        </script>
+
+        <li>Tarta de fresas</li>
+        <p>
+            <img id="mostrar-imagen3" onclick="cambiarImagen3()" src="imagenes/tarta-fresas.jpg" alt="Tarta de fresas"
+                width="280" height="360" />
+        </p>
+        <script>
+            function cambiarImagen3() {
+                var imagenMostrada = document.getElementById('mostrar-imagen3');
+                if (imagenMostrada.src.match("imagenes/tarta-fresas.jpg")) {
+                    imagenMostrada.src = "imagenes/mermelada.jpg";
+                }
+                else {
+                    imagenMostrada.src = "imagenes/tarta-fresas.jpg";
+                }
+            }
+        </script>
+
+        <li>Tarta de castañas</li>
+        <p>
+            <img id="mostrar-imagen4" onclick="cambiarImagen4()" src="imagenes/tarta-castanas.jpg" alt="Tarta de castañas"
+                width="280" height="360" />
+        </p>
+        <script>
+            function cambiarImagen4() {
+                var imagenMostrada = document.getElementById('mostrar-imagen4');
+                if (imagenMostrada.src.match("imagenes/tarta-castanas.jpg")) {
+                    imagenMostrada.src = "imagenes/castana.jpg";
+                }
+                else {
+                    imagenMostrada.src = "imagenes/tarta-castanas.jpg";
+                }
+            }
+        </script>
+
+        <li>Tarta de chocolate Matilda</li>
+        <p>
+            <img id="mostrar-imagen5" onclick="cambiarImagen5()" src="imagenes/chocolate-cake.png" alt="Tarta de chocolate Matilda"
+                width="280" height="360" />
+        </p>
+        <script>
+            function cambiarImagen5() {
+                var imagenMostrada = document.getElementById('mostrar-imagen5');
+                if (imagenMostrada.src.match("imagenes/chocolate-cake.png")) {
+                    imagenMostrada.src = "imagenes/chocolate.jpg";
+                }
+                else {
+                    imagenMostrada.src = "imagenes/chocolate-cake.png";
+                }
+            }
+        </script>
+    </ul>
+
+    <div class="pie">
+        </p><em>AnacondA</em></div>
+</body>
+
+</html>
